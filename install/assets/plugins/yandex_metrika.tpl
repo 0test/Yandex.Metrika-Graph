@@ -10,7 +10,7 @@
  * @package     evo
  * @internal    @events OnManagerWelcomeHome
  * @internal    @modx_category Manager and Admin
- * @internal    @properties &app_id=ID приложения;text; &app_token=Токен приложения;text &counter_id=ID счётчика;int  &menuindex=Позиция виджета;int;10;1 &widget_width=Ширина виджета;list;6,12;12;12 &show_dev_links=Показать служебные ссылки;list;0,1;1
+ * @internal    @properties &app_id=ID приложения;text; &app_token=Токен приложения;text &counter_id=ID счётчика;int  &menuindex=Позиция виджета;int;0;1 &widget_width=Ширина виджета;list;6,12;12;12 &show_dev_links=Показать служебные ссылки;list;0,1;1
  * @reportissues https://github.com/0test
  * @author      A Ka https://vk.com/remote_adm
  * @lastupdate  08-01-2019
