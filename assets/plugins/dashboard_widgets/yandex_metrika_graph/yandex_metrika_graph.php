@@ -5,6 +5,7 @@ switch($e->name){
 		$id = $params['app_id'];
 		$token = $params['app_token'];
 		$counter_id = $params['counter_id'];
+		$daysAgo = $params['daysAgo'];
 		if($params['show_dev_links']){
 			$metrika_content .= '<a href="https://oauth.yandex.ru/client/new" target="_blank">Создать приложение</a>';
 			$metrika_content .= '<BR>';
@@ -26,7 +27,7 @@ switch($e->name){
 			'oauth_token' => $token,
 			'metrics'     => 'ym:s:visits,ym:s:pageviews,ym:s:users',
 			'dimensions'  => 'ym:s:date',
-			'date1'       => '7daysAgo',
+			'date1'       => $daysAgo.'daysAgo',
 			'date2'       => 'yesterday',
 			'sort'        => 'ym:s:date',
 		];
@@ -54,7 +55,7 @@ switch($e->name){
                 type: 'spline'
               },
               title: {
-                text: 'Активность посетителей за 7 дней',
+                text: 'Активность посетителей за $daysAgo дней',
                 x: -20
               },
               xAxis: {
